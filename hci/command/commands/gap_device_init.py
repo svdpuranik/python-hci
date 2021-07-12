@@ -12,6 +12,7 @@ class GAP_DeviceInit(CommandPacket):
         GAP_PROFILE_OBSERVER = 0x02
         GAP_PROFILE_PERIPHERAL = 0x04
         GAP_PROFILE_CENTRAL = 0x08
+        GAP_PROFILE_VENDOR_SPECIFIC = 0x5f
 
     def __init__(self, profile_role, max_scan_responses, irk, csrk,
                  sign_counter):
